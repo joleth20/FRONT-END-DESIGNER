@@ -1,0 +1,111 @@
+:root{
+    /* Theme-color */
+    --primary-theme-color:#437AFF;
+    --primary-theme-color2:#A0A09F;
+    --footer-color-2035:#162855;
+    --primary-normal-white:#FFFF;
+    --menu-color:#2D50AA;
+    --border-color: (rgba(80, 11, 11),1);
+    /* Font-family */
+    --primary-ff-theme:"helvetica";
+    --primary-ff-theme-2: 'georgia', 'palatino', "book antiqua" ;
+}
+
+/* Footer */
+
+.main-container  .footer {
+    height: 63px;
+    width: 100%;
+    background-color: var(--primary-theme-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-container .footer .left ul{
+    height: 22px;
+    width: 109px;
+    list-style: none;
+    /* layout */
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.main-container .footer .left ul img{
+    height: 22px;
+    width: 22px;
+}
+
+.main-container .footer .left{
+    /* layout */
+    display: flex;
+    column-gap: 30px;
+}
+
+.main-container .footer .left .email{
+    color: var(--primary-normal-white);
+    font-size: 15px;
+    font-style: italic;
+    font-weight: lighter;
+    font-family: var(--primary-ff-theme-2);
+}
+
+.main-container .footer .left .email a{
+    color: var(--primary-normal-white);
+    text-decoration: none;
+}
+
+.main-container .footer .right p{
+    width: 378px;
+    height: 18px;
+}
+
+.main-container .footer .right p span{
+    color: var(--primary-normal-white);
+    font-family: var(--primary-ff-theme);
+    font-size: 14px;
+    font-style: italic;
+}
+
+.main-container .footer .right p span a{
+    color: var(--primary-normal-white);
+}
+
+/* End Footer */
+
+
+/* Media Quaries */
+
+
+@media (max-width:400px){
+
+    .main-container .footer{
+        height: 143px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .main-container .footer .left {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
+    }
+
+    .main-container .footer .left ul{
+        height: 35px;
+        width: 185px;
+    }
+
+    .main-container .footer .left ul li img{
+        height: 35px;
+        width: 35px;
+    }
+    
+    .main-container .footer .right p {
+        width: 184px;
+        height: 36px;
+        text-align: center;
+    }
+
+}
